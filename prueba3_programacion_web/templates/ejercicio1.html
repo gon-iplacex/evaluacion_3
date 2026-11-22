@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='ejercicio1.css') }}">
+</head>
+<body>
+    <form method ="POST">
+        <h1>Formulario de notas</h1>
+        <p>Nota 1:</p>
+        <input type="number" name="nota1" required>
+        <p>Nota 2:</p>
+        <input type="number" name="nota2" required>
+        <p>Nota 3:</p>
+        <input type="number" name="nota3" required>
+        <p>Asistencia(%):</p>
+        <input type="number" name="asistencia" required>
+        <button type="submit">Enviar</button>
+    {% if resultado %}
+        <p>{{resultado.promedio}}</p>
+        <p>{{resultado.estado}}</p>
+    {% endif %}
+    </form>
+</body>
+</html>

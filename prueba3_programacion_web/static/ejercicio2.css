@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: gray;
+}
+form{
+    padding: 25px 25px;
+    border-color: #00aeff;
+    border: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+button{
+    display: block;
+    width: 55%;
+    margin-top: 15px;
+    background-color:#00aeff;
+    color: white;
+    border: 10px;
+    border-radius:8px ;
+    font-size: 20px;
+}
